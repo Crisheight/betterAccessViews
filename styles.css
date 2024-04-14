@@ -13,24 +13,24 @@
 :root {
     --ff-primary: 'Source Sans Pro', sans-serif;
     --ff-secondary: 'Source Code Pro', monospace;
-    
+
     --fw-reg: 300;
     --fw-bold: 900;
-    
+
     --clr-light: #f5f5f5;
-    --clr-dark: #262626; 
+    --clr-dark: #262626;
     --clr-accent: #5C89E1;
     --clr-compliment: #ff6753;
     --clr-second: #CBE0EE;
     --clr-third: #ffc600;
-    
+
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
-    
+
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
-          0.125em 0.125em 0.25em rgba(0,0,0,.15);
+    0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
 
 @media (min-width: 800px) {
@@ -157,7 +157,7 @@ h3 { font-size: var(--fs-h3) }
 
 
 @media (min-width: 600px) {
-    
+
     .intro__img {
         grid-area: img;
         min-width: 250px;
@@ -174,4 +174,3 @@ h3 { font-size: var(--fs-h3) }
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
-
