@@ -43,6 +43,10 @@ html {
     margin-bottom: 3rem;
 }
 
+.fa-search {
+    font-size: 16px
+}
+
 .stepProcess {
     display: flex;
     flex-flow: row wrap;
