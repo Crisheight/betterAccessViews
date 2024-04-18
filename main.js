@@ -1,5 +1,5 @@
-const searchIcon = document.getElementById('#searchIcon');
+const searchIcon = document.getElementById('searchIcon');
 
 searchIcon.addEventListener('click', () => {
-    console.log('Click!');
+    console.log("Hello");
 });
