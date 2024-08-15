@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/eea37a62cd.js" crossorigin="anonymous"></script>
+    <script type="module" src="./main.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>betterAccessViews</title>
@@ -10,31 +10,37 @@
 
 <body>
 
-<h1 class="logoPositioning">
-    <img class=companyLogo-Landing src="./img/companyLogo-Landing.jpg" alt="Company Logo"/>
-</h1>
+    <h1 class="logoPositioning">
+        <img class=companyLogo-Landing src="./img/companyLogo-Landing.jpg" alt="Company Logo"/>
+    </h1>
 
-<p class="sectionTitle-intro">Better <strong>Access</strong> Views</p>
+    <p class="sectionTitle-intro">Better <strong>Access</strong> Views</p>
 
-<div class="searchBar">
-    <form action="#" method="post">
-        <label for="locationSearchBar">
-            <input id="locationSearchBar" type="text" placeholder="Search Locations" name="userLocation" autofocus size="60">
-        </label>
-        <button id="searchIcon">
-            <i class="fa fa-search"></i>
-        </button>
-    </form>
-</div>
+    <div class="mapContainer">
+        <div class="pac-card" id="pac-card">
+            <div id="pac-container">
+                <input id="pac-input" type="text" placeholder="Enter a location" />
+            </div>
+        </div>
 
-<div class="stepProcess">
-    <p class="step1"><img src="./img/Step1.jpg" alt="Step 1 Instructions"/></p>
-    <p class="step2"><img src="./img/Step2.jpg" alt="Step 2 Instructions"/></p>
-    <p class="step3"><img src="./img/Step3.jpg" alt="Step 3 Instructions"/></p>
-    <p class="step4"><img src="./img/Step4.jpg" alt="Step 4 Instructions"/></p>
-</div>
+        <div id="map"></div>
 
-<script async src="main.js"></script>
+        <div id="infowindow-content">
+            <span id="place-name" class="title"></span><br />
+            <span id="place-address"></span>
+        </div>
+    </div>
+
+    <div class="stepProcess">
+        <p class="step1"><img src="./img/Step1.jpg" alt="Step 1 Instructions"/></p>
+        <p class="step2"><img src="./img/Step2.jpg" alt="Step 2 Instructions"/></p>
+        <p class="step3"><img src="./img/Step3.jpg" alt="Step 3 Instructions"/></p>
+        <p class="step4"><img src="./img/Step4.jpg" alt="Step 4 Instructions"/></p>
+    </div>
+    <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKfc08-PJW_x7GufjxZRgvY03Ph00pGJg&loading=async&callback=initMap&libraries=places&v=weekly"
+            defer
+    ></script>
+
 </body>
-
 </html>
