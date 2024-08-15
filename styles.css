@@ -43,16 +43,6 @@ html {
     height: 284px;
 }
 
-.searchBar {
-    text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
-
-.fa-search {
-    font-size: 16px
-}
-
 .stepProcess {
     display: flex;
     flex-flow: row wrap;
@@ -77,4 +67,98 @@ html {
 .step4 {
     margin-left: 1%;
     margin-right: 1%;
+}
+
+/*
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map.
+ */
+#map {
+    height: 100%;
+}
+
+/*
+ * Optional: Makes the sample page fill the window.
+ */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.mapContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#description {
+    font-family: Roboto, serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#infowindow-content .title {
+    font-weight: bold;
+    display: grid;
+    justify-content: center;
+    align-self: center;
+}
+
+#map {
+    height: 400px; /* The height is 400 pixels */
+    width: 42%; /* The width is the width of the web page */
+    border-radius: 12px;
+}
+
+@media screen and (max-width: 1200px) {
+    .pac-card {
+        width: 90%;
+    }
+
+    #map {
+        width: 90%;
+    }
+}
+
+
+.pac-card {
+    background-color: #fff;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    padding: 0 0.5em;
+    font: 400 18px Roboto, Arial, sans-serif;
+    overflow: hidden;
+    font-family: Roboto, serif;
+}
+
+#pac-container {
+    padding-bottom: 12px;
+    margin-right: 12px;
+    margin-top: 12px;
+}
+
+#pac-input {
+    background-color: #fff;
+    font-family: Roboto, serif;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 400px;
+}
+
+#pac-input:focus {
+    border-color: #4d90fe;
+}
+
+#title {
+    color: #fff;
+    background-color: #4d90fe;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 6px 12px;
 }
