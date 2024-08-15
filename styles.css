@@ -1,4 +1,6 @@
-/***Custom Properties***/
+/* ************************
+ *  Custom Properties     *
+ * ************************  */
 
 :root {
 
@@ -12,14 +14,18 @@
 }
 
 
-/***General styles***/
+/* ************************
+ *  General Styles        *
+ * ************************  */
 
 html {
     scroll-behavior: smooth;;
 }
 
 
-/***BODY SECTION***/
+/* ************************
+ *  Body Section          *
+ * ************************  */
 
 .sectionTitle-intro {
     text-align: center;

@@ -4,6 +4,7 @@ const locationSearchBar = document.getElementById('locationSearchBar');
 /* ************************
  *  Geolocation API Logic *
  * ************************  */
+
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(
         (position) => {
