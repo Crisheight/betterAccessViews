@@ -111,13 +111,25 @@ body {
     border-radius: 12px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1470px) {
     .pac-card {
         width: 90%;
     }
 
     #map {
         width: 90%;
+    }
+}
+
+@media screen and (min-width: 1471px) and (max-width: 1600px) {
+    #map {
+        width: 85%;
+    }
+}
+
+@media screen and (min-width: 1601px) and (max-width: 2600px) {
+    #map {
+        width: 70%;
     }
 }
 
